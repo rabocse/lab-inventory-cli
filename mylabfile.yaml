@@ -1,0 +1,115 @@
+- device:
+  type: firewall
+  name: my-asa-gw
+  hardware: FPR9300
+  software: FTD
+  version: "6.6"
+  ip: 10.10.10.10
+  notes: " wrong_password"
+  cli:
+    - ssh
+    - "22"
+    - admin
+    - Admin123
+  gui:
+    - https
+    - "443"
+    - admin
+    - Admin
+
+- device:
+  type: firewall
+  name: ANOTHER-ASA-FW
+  hardware: FPR9300
+  software: FTD
+  version: "6.6"
+  ip: 10.10.10.10
+  notes: " wrong_password"
+  cli:
+    - ssh
+    - "22"
+    - admin
+    - Admin123
+  gui:
+    - https
+    - "443"
+    - admin
+    - Admin
+
+- device:
+  type: router
+  name: my-router-calo
+  hardware: ISR4431
+  software: IOS-XE
+  version: "6.6"
+  ip: 10.10.10.20
+  notes: " needs_a_reimage"
+  cli:
+    - ssh
+    - "22"
+    - admin
+    - Admin123
+  gui:
+    - https
+    - "443"
+    - admin
+    - Admin
+
+- device:
+  type: router
+  name: my-router-brussels
+  hardware: ISR4431
+  software: IOS-XE
+  version: "6.10"
+  ip: 10.10.20.20
+  notes: " Booting loop"
+  cli:
+    - ssh
+    - "22"
+    - admin
+    - Admin123
+  gui:
+    - https
+    - "443"
+    - admin
+    - Admin
+
+- device:
+  type: firewall
+  name: my-ftd
+  hardware: ISR4432
+  software: IOS-XE
+  version: "6.10"
+  ip: 10.10.20.20
+  notes: " Booting loop"
+  cli:
+    - ssh
+    - "22"
+    - admin
+    - Admin123
+  gui:
+    - https
+    - "443"
+    - admin
+    - Admin
+
+
+- device:
+  type: router
+  name: my-router-krk
+  hardware: ISR4432
+  software: IOS-XE
+  version: "6.10"
+  ip: 10.10.20.20
+  notes: " Booting loop"
+  cli:
+    - ssh
+    - "22"
+    - admin
+    - Admin123
+  gui:
+    - https
+    - "443"
+    - admin
+    - Admin
+
